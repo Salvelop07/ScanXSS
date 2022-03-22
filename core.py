@@ -11,15 +11,17 @@ from urllib.parse import urljoin, urlparse, parse_qs, urlencode
 
 
 # Information About Project.
-__Name__ = "scancss"
-__description__ = "scancss is a xss vulnariblity scanner tool."
-__author__ = "Md. Nur habib"
+__Name__ = "scanxss"
+__description__ = "scanxss is a xss vulnariblity scanner tool."
+__author__ = "Salvador"
 __copyright__ = "Copyright 2022."
 __license__ = "GNU v.20"
 __version__ = "v1.0.1"
-__email__ = "thenurhabib@gmail.com"
+__email__ = "salvador.h.1004@gmail.com"
 
 # Style class
+
+
 class Style:
     reset = '\033[0m'
     bold = '\033[01m'
@@ -30,10 +32,6 @@ class Style:
     lightgrey = '\033[37m'
     darkgrey = '\033[90m'
     yellow = '\033[93m'
-
-
-
-
 
 
 class core:

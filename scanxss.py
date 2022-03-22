@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-__Name__ = "scancss"
-__description__ = "scancss is a xss vulnariblity scanner tool."
-__author__ = "Md. Nur habib"
+__Name__ = "scanxss"
+__description__ = "scanxss is a xss vulnariblity scanner tool."
+__author__ = "Salvador"
 __copyright__ = "Copyright 2022."
 __license__ = "GNU v.20"
 __version__ = "v1.0.1"
-__email__ = "thenurhabib@gmail.com"
+__email__ = "salvador.h.1004@gmail.com"
 
 
 # Import Modules.
@@ -34,7 +34,7 @@ class Style:
 
 epilog = f"""
 ==================================================
-GitHub: https://www.github.com/thenurhabib/scancss
+GitHub: https://www.github.com/Salvelop07/scanxss
 Version : {__version__}
 
 """
@@ -59,7 +59,7 @@ def check(getopt):
 
 def start():
     parse = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter,
-                                    usage="scancss -u <target> [options]", epilog=epilog, add_help=False)
+                                    usage="scanxss -u <target> [options]", epilog=epilog, add_help=False)
 
     pos_opt = parse.add_argument_group("Options")
     pos_opt.add_argument("--help", action="store_true",
@@ -81,13 +81,13 @@ def start():
     pos_opt.add_argument("--proxy", default=None, metavar="",
                          help="Set proxy (e.g. {'https':'https://10.10.1.10:1080'})")
     pos_opt.add_argument("--about", action="store_true",
-                         help="Print information about scancss tool")
+                         help="Print information about scanxss tool")
     pos_opt.add_argument(
         "--cookie", help="Set cookie (e.g {'ID':'1094200543'})", default='''{"ID":"1094200543"}''', metavar="")
 
     getopt = parse.parse_args()
     print(logo)
-    Log.info(f"{Style.bold}{Style.blue}--scancss{Style.reset}{Style.cyan}")
+    Log.info(f"{Style.bold}{Style.blue}--scanxss{Style.reset}{Style.cyan}")
     if getopt.u:
         core.main(getopt.u, getopt.proxy, getopt.user_agent,
                   check(getopt), getopt.cookie, getopt.method)

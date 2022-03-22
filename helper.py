@@ -5,13 +5,13 @@
 import json
 import requests
 
-__Name__ = "scancss"
-__description__ = "scancss is a xss vulnariblity scanner tool."
-__author__ = "Md. Nur habib"
+__Name__ = "scanxss"
+__description__ = "scanxss is a xss vulnariblity scanner tool."
+__author__ = "Salvador"
 __copyright__ = "Copyright 2022."
 __license__ = "GNU v.20"
 __version__ = "v1.0.1"
-__email__ = "thenurhabib@gmail.com"
+__email__ = "salvador.h.1004@gmail.com"
 
 
 # Style class
@@ -41,17 +41,17 @@ def session(proxies, headers, cookie):
 
 
 logo = f"""{Style.bold}{Style.yellow}
-       ___       ___       ___       ___       ___       ___       ___   
-      /\  \     /\  \     /\  \     /\__\     /\  \     /\  \     /\  \  
-     /::\  \   /::\  \   /::\  \   /:| _|_   /::\  \   /::\  \   /::\  \ 
-    /\:\:\__\ /:/\:\__\ /::\:\__\ /::|/\__\ /:/\:\__\ /\:\:\__\ /\:\:\__\\
-    \:\:\/__/ \:\ \/__/ \/\::/  / \/|::/  / \:\ \/__/ \:\:\/__/ \:\:\/__/
-     \::/  /   \:\__\     /:/  /    |:/  /   \:\__\    \::/  /   \::/  / 
-      \/__/     \/__/     \/__/     \/__/     \/__/     \/__/     \/__/ {Style.reset}{Style.red}{__version__}{Style.yellow}  
-   
-    
+       ___       ___       ___       ___       ___       ___       ___
+      /\  \     /\  \     /\  \     /\__\     /\  \     /\  \     /\  \
+     /::\  \   /::\  \   /::\  \   /:| _|_   _|:|__|   /::\  \   /::\  \
+    /\:\:\__\ /:/\:\__\ /::\:\__\ /::|/\__\ /::::\__\ /\:\:\__\ /\:\:\__\\
+    \:\:\/__/ \:\ \/__/ \/\::/  / \/|::/  / \_::_/__/ \:\:\/__/ \:\:\/__/
+     \::/  /   \:\__\     /:/  /    |:/  /    |:|__|    \::/  /   \::/  /
+      \/__/     \/__/     \/__/     \/__/     \/__/     \/__/     \/__/ {Style.reset}{Style.red}{__version__}{Style.yellow}
+
+
            𝓕𝓪𝓼𝓽𝓮𝓼𝓽  𝓣𝓸𝓸𝓵 𝓽𝓸 𝓯𝓲𝓷𝓭 𝓒𝓻𝓸𝓼𝓼 𝓼𝓲𝓽𝓮 𝓼𝓬𝓻𝓲𝓹𝓽𝓲𝓷𝓰.
            ======================================================
 {Style.reset}{Style.darkgrey}
-            Author : Md. Nur Habib
-            Email  : thenurhabib@gmail.com{Style.reset} \n\n"""
+            Author : Salvador
+            Email  : salvador.h.1004@gmail.com{Style.reset} \n\n"""

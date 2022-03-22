@@ -10,14 +10,13 @@ from helper import *
 from urllib.parse import urljoin
 from multiprocessing import Process
 
-__Name__ = "scancss"
-__description__ = "scancss is a xss vulnariblity scanner tool."
-__author__ = "Md. Nur habib"
+__Name__ = "scanxss"
+__description__ = "scanxss is a xss vulnariblity scanner tool."
+__author__ = "Salvador"
 __copyright__ = "Copyright 2022."
 __license__ = "GNU v.20"
 __version__ = "v1.0.1"
-__email__ = "thenurhabib@gmail.com"
-
+__email__ = "salvador.h.1004@gmail.com"
 
 
 # Crawler Class.
